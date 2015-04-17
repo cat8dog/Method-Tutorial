@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+       _viewController = [[ViewController alloc]init];
+    [_viewController myMethod:11];
+    [_viewController myMethod2:23 theSecondValue:56];
+    [_viewController myBook:@"History" secondString:@"Wolves"];
     return YES;
 }
 
